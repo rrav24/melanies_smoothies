@@ -24,10 +24,10 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(
 #st.stop()
 
 # Convert the Snowpark Dataframe to a Pandas Dataframe so we can use the LOC function
-pd_df=mydataframe.to_pandas()
+pd_df = mydataframe.to_pandas()
 st.dataframe.to_pandas()
-st.dataframe(pd_df)
-st.stop()
+#st.dataframe(pd_df)
+#st.stop()
                                                                                             
 ingredients_list = st.multiselect(
     'Choose up to 5 ingredients:',
